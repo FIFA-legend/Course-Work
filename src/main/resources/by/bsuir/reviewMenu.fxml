@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0"
+            prefWidth="1280.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.ReviewMenuController">
+    <ImageView fitHeight="800.0" fitWidth="1280.0" pickOnBounds="true">
+        <Image url="@images/RainbowSky.jpg"/>
+    </ImageView>
+    <Text fill="WHITE" layoutX="391.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%number"
+          textAlignment="RIGHT" wrappingWidth="208.724609375">
+        <font>
+          <Font size="36.0"/>
+        </font>
+    </Text>
+    <TextField fx:id="numberField" layoutX="678.0" layoutY="263.0" promptText="%numberWithoutColon">
+        <font>
+          <Font size="16.0"/>
+        </font>
+    </TextField>
+    <Button fx:id="perfectSmileButton" layoutX="970.0" layoutY="370.0" mnemonicParsing="false" prefWidth="165.0"
+            style="-fx-background-radius: 100;" styleClass="PerfectButton" stylesheets="@ReviewMenuStyles.css">
+        <graphic>
+            <ImageView fitHeight="145.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@images/PerfectSmile.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button fx:id="goodSmileButton" layoutX="770.0" layoutY="370.0" mnemonicParsing="false"
+            style="-fx-background-radius: 100;" styleClass="GoodButton" stylesheets="@ReviewMenuStyles.css">
+        <graphic>
+            <ImageView fitHeight="145.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@images/GoodSmile.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button fx:id="normalSmileButton" layoutX="570.0" layoutY="370.0" mnemonicParsing="false"
+            style="-fx-background-radius: 100;" styleClass="NormalButton" stylesheets="@ReviewMenuStyles.css">
+        <graphic>
+            <ImageView fitHeight="145.0" fitWidth="149.0" pickOnBounds="true">
+                <Image url="@images/NormalSmile.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button fx:id="badSmileButton" layoutX="370.0" layoutY="370.0" mnemonicParsing="false"
+            style="-fx-background-radius: 100;" styleClass="BadButton" stylesheets="@ReviewMenuStyles.css">
+        <graphic>
+            <ImageView fitHeight="145.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@images/BadSmile.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button fx:id="terribleSmileButton" layoutX="170.0" layoutY="370.0" mnemonicParsing="false"
+            style="-fx-background-radius: 100;" styleClass="TerribleButton" stylesheets="@ReviewMenuStyles.css">
+        <graphic>
+            <ImageView fitHeight="145.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@images/TerribleSmile.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Text fx:id="timeText" fill="RED" layoutX="85.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="23:30">
+        <font>
+            <Font size="72.0"/>
+        </font>
+    </Text>
+    <Text fx:id="bankText" fill="RED" layoutX="512.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="%bank">
+        <font>
+            <Font size="96.0"/>
+        </font>
+    </Text>
+    <Button fx:id="homeButton" layoutX="1099.0" layoutY="56.0" mnemonicParsing="false" prefHeight="80.0"
+            prefWidth="88.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 80;" styleClass="HomeButton"
+            stylesheets="@ReviewMenuStyles.css">
+        <graphic>
+            <ImageView fitHeight="81.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@images/Home.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+</AnchorPane>

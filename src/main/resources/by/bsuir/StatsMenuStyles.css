@@ -1,0 +1,24 @@
+.BarChart {
+    -fx-scale-shape: false;
+    -fx-vertical-zero-line-visible: false;
+}
+.RadioButton:selected {
+    -fx-border-radius: 50;
+    -fx-border-color: white;
+}
+.RadioButton:hover {
+    -fx-border-radius: 50;
+    -fx-border-color: cornflowerblue;
+}
+.RadioButton, .Slider {
+    -fx-cursor: hand;
+}
+.HomeButton {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, silver, 50, 0, 0, 0);
+    -fx-background-color: oldlace;
+}
+.HomeButton:hover {
+    -fx-border-color: black;
+    -fx-border-radius: 100px;
+}

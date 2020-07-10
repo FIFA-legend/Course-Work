@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.StatsMenuController">
+    <ImageView fitHeight="800.0" fitWidth="1280.0" pickOnBounds="true">
+        <Image url="@images/MilkWay.jpg" />
+    </ImageView>
+    <PieChart fx:id="pieChart" animated="false" clockwise="false" labelsVisible="false" layoutX="15.0" layoutY="350.0" prefHeight="400.0" prefWidth="350.0" />
+    <Slider fx:id="slider" blockIncrement="1.0" layoutX="104.0" layoutY="217.0" majorTickUnit="11.0" max="15.0" min="3.0" minorTickCount="10" prefHeight="40.0" prefWidth="400.0" showTickLabels="true" showTickMarks="true" styleClass="Slider" stylesheets="@StatsMenuStyles.css" value="1.0" />
+    <Button fx:id="homeButton" layoutX="1143.0" layoutY="34.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="89.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 80;" styleClass="HomeButton" stylesheets="@StatsMenuStyles.css">
+        <graphic>
+            <ImageView fitHeight="73.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@images/Home.png" />
+            </ImageView>
+        </graphic>
+    </Button>
+    <TextField fx:id="textField" editable="false" layoutX="550.0" layoutY="217.0" prefHeight="31.0" prefWidth="56.0" />
+    <BarChart fx:id="barChart" layoutX="360.0" layoutY="350.0" legendVisible="false" prefHeight="400.0" prefWidth="450.0" styleClass="BarChart" stylesheets="@StatsMenuStyles.css">
+      <xAxis>
+          <CategoryAxis side="BOTTOM" />
+      </xAxis>
+      <yAxis>
+          <NumberAxis side="LEFT" />
+      </yAxis>
+    </BarChart>
+    <LineChart fx:id="lineChart" axisSortingPolicy="NONE" horizontalZeroLineVisible="false" layoutX="820.0" layoutY="350.0" legendVisible="false" prefHeight="400.0" prefWidth="450.0">
+      <xAxis>
+          <CategoryAxis side="BOTTOM" />
+      </xAxis>
+      <yAxis>
+          <NumberAxis side="LEFT" />
+      </yAxis>
+    </LineChart>
+    <RadioButton fx:id="openDepositRadio" layoutX="104.0" layoutY="34.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="340.0" styleClass="RadioButton" stylesheets="@StatsMenuStyles.css" text="%depositOpening" textFill="WHITE">
+        <font>
+          <Font size="20.0" />
+        </font>
+    </RadioButton>
+    <RadioButton fx:id="exchangeRadio" layoutX="104.0" layoutY="90.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="340.0" styleClass="RadioButton" stylesheets="@StatsMenuStyles.css" text="%foreignExchange" textFill="WHITE">
+        <font>
+          <Font size="20.0" />
+        </font>
+    </RadioButton>
+    <RadioButton fx:id="bankGuaranteesRadio" layoutX="512.0" layoutY="34.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="340.0" styleClass="RadioButton" stylesheets="@StatsMenuStyles.css" text="%obtainingGuarantees" textFill="WHITE">
+        <font>
+          <Font size="20.0" />
+        </font>
+    </RadioButton>
+    <RadioButton fx:id="putMoneyRadio" layoutX="512.0" layoutY="90.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="340.0" styleClass="RadioButton" stylesheets="@StatsMenuStyles.css" text="%depositingMoney" textFill="WHITE">
+        <font>
+          <Font size="20.0" />
+        </font>
+    </RadioButton>
+    <Text fill="WHITE" layoutX="104.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%timePeriod" wrappingWidth="373.1113438606262">
+        <font>
+          <Font size="24.0" />
+        </font>
+    </Text>
+    <Text fill="WHITE" layoutX="871.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%numberOfRatings" textAlignment="CENTER" wrappingWidth="373.111328125">
+        <font>
+          <Font size="30.0" />
+        </font>
+    </Text>
+    <Text fill="WHITE" layoutX="417.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%averageRating" textAlignment="CENTER" wrappingWidth="362.7734375">
+        <font>
+          <Font size="30.0" />
+        </font>
+    </Text>
+    <Text fill="WHITE" layoutX="15.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%ratingStructure" textAlignment="CENTER" wrappingWidth="373.1113246977329">
+        <font>
+          <Font size="30.0" />
+        </font>
+    </Text>
+</AnchorPane>

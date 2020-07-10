@@ -1,0 +1,9 @@
+.Button:hover {
+    -fx-border-color: green;
+    -fx-border-radius: 100px;
+}
+.Button {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, darkred, 75, 0, 0, 0);
+    -fx-background-color: oldlace;
+}

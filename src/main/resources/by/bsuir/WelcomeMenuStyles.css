@@ -1,0 +1,16 @@
+.Button, .RoundButton {
+    -fx-cursor: hand;
+    -fx-background-color: oldlace;
+}
+.Button:hover {
+    -fx-border-color: black;
+}
+.RoundButton:hover, .LanguageButton:hover {
+    -fx-border-color: black;
+    -fx-border-radius: 100px;
+}
+.LanguageButton {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, hotpink, 50, 0, 0, 0);
+    -fx-background-color: oldlace;
+}

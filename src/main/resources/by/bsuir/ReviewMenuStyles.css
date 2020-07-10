@@ -1,0 +1,47 @@
+.PerfectButton {
+    -fx-background-color: #78ac18;
+}
+.GoodButton {
+    -fx-background-color: #b3b037;
+}
+.NormalButton {
+    -fx-background-color: #FFCC00;
+}
+.BadButton {
+    -fx-background-color: orange;
+}
+.TerribleButton {
+    -fx-background-color: #dd1400;
+}
+.PerfectButton, .GoodButton, .NormalButton, .BadButton, .TerribleButton {
+    -fx-cursor: hand;
+}
+.HomeButton {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, silver, 50, 0, 0, 0);
+    -fx-background-color: oldlace;
+}
+.HomeButton:hover {
+    -fx-border-color: black;
+    -fx-border-radius: 100px;
+}
+.PerfectButton:hover {
+    -fx-border-color: #78ac18;
+    -fx-border-radius: 100px;
+}
+.GoodButton:hover {
+    -fx-border-color: #b3b037;
+    -fx-border-radius: 100px;
+}
+.NormalButton:hover{
+    -fx-border-color: #FFCC00;
+    -fx-border-radius: 100px;
+}
+.BadButton:hover {
+    -fx-border-color: orange;
+    -fx-border-radius: 100px;
+}
+.TerribleButton:hover {
+    -fx-border-color: #dd1400;
+    -fx-border-radius: 100px;
+}

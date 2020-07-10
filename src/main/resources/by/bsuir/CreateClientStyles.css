@@ -1,0 +1,37 @@
+.StarButton:hover, .HomeButton:hover {
+    -fx-border-color: black;
+    -fx-border-radius: 100px;
+}
+.CheckBox:hover {
+    -fx-border-color: silver;
+}
+.CheckBox:selected {
+    -fx-border-color: cornflowerblue;
+}
+.RadioButton:hover {
+    -fx-border-color: silver;
+    -fx-border-radius: 20px;
+}
+.StarButton {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, mediumslateblue, 50, 0, 0, 0);
+    -fx-background-color: oldlace;
+}
+.ConfirmButton:hover {
+    -fx-border-color: black;
+    -fx-border-radius: 0px;
+}
+.ConfirmButton {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, mediumslateblue, 50, 0, 0, 0);
+    -fx-background-color: oldlace;
+}
+.RadioButton:selected {
+    -fx-effect: dropshadow(three-pass-box, aqua, 0, 0, 0, 0);
+    -fx-underline: true;
+}
+.HomeButton {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, silver, 50, 0, 0, 0);
+    -fx-background-color: oldlace;
+}
